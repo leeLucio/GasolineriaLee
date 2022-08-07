@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Caparazón</title>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Caparazón</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -55,25 +58,25 @@
         </article>
 
         <section class="diferenciales">
-            <h2 class="diferenciales__titulo">Diferenciales</h2>
+            <h2 class="diferenciales__titulo" data-aos="fade-up">Diferenciales</h2>
             <ul class="diferenciales__lista">
-                <li class="diferenciales__item">
+                <li class="diferenciales__item" data-aos="fade-up">
                     <img src="./imagenes/account-star.svg" alt="">
                     <p>Atención personalizada</p>
                 </li>
-                <li class="diferenciales__item">
+                <li class="diferenciales__item" data-aos="fade-up">
                     <img src="./imagenes/store-search.svg" alt="">
                     <p>Espacio diferenciado</p>
                 </li>
-                <li class="diferenciales__item">
+                <li class="diferenciales__item" data-aos="fade-up">
                     <img src="./imagenes/certificate.svg" alt="">
                     <p>Profesionales calificados</p>
                 </li>
-                <li class="diferenciales__item">
+                <li class="diferenciales__item" data-aos="fade-up">
                     <img src="./imagenes/hand-wash.svg" alt="">
                     <p>Limpieza</p>
                 </li>
-                <li class="diferenciales__item">
+                <li class="diferenciales__item" data-aos="fade-up">
                     <img src="./imagenes/octagram.svg" alt="">
                     <p>Calidad de atención y productos</p>
                 </li>
@@ -90,6 +93,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
