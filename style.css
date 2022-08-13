@@ -67,8 +67,14 @@ header {
 }
 
 /* Index */
-.banner {
-	width: 100%;
+.carrusel__imagen{
+	height: 500px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.carrusel__boton{
+	background-color: rgba(100, 100, 100, 30%)
 }
 
 .principal,
