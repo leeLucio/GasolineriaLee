@@ -15,6 +15,7 @@ body {
 header {
 	background-color: #232F3E;
 	padding: 20px;
+	height: min-content;
 
 	display: flex;
 	justify-content: space-between;
@@ -25,25 +26,10 @@ header {
 	width: 48px;
 }
 
-.menu__lista {
-	list-style-type: none;
-
-	display: flex;
-	justify-content: space-around;
-	gap: 10px;
+.navbar-nav{
+	gap: 0 1rem;
 }
 
-.menu__item a {
-	display: block;
-	padding: 20px;
-	text-decoration: none;
-	color: white;
-
-}
-
-.menu__item:hover {
-	background-color: #2a3a4e;
-}
 
 .principal,
 .diferenciales,
@@ -248,12 +234,16 @@ header {
 /* Ubicacion */
 .horarios__tabla {
 	margin: 0 auto;
+	border-collapse: separate;
+	border-spacing: 30px 3px;
 }
+
 
 .ubicacion__mapa {
 	width: 100%;
 	height: 600px;
 }
+
 
 footer {
 	padding: 30px;
@@ -265,11 +255,6 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-	header {
-		flex-direction: column;
-		gap: 30px;
-	}
-
 	.principal,
 	.diferenciales,
 	.servicios,
@@ -309,29 +294,10 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-
-	/* Header */
-	header {
-		gap: 0;
-		padding: 0;
-	}
-
-	.header__logo {
-		display: none;
-	}
-
-	.menu__lista {
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 0;
-	}
-
-	.menu__item {
-		width: 100%;
+	.navbar-nav .nav-link{
 		text-align: center;
+		padding: 1.2rem;
 	}
-
 
 	/* Index */
 	.diferenciales__item {
@@ -359,6 +325,11 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+	/* Index */
+	.carrusel__imagen{
+		height: 300px;
+	}
+
 	/* Nosotros */
 	.nosotros {
 		width: 100%;

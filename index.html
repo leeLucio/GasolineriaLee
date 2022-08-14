@@ -25,32 +25,32 @@
 
 <body>
     <header>
-        <a href="./index.html"><img src="./imagenes/gas-station-svgrepo-com.svg" alt="logo" class="header__logo"></a>
-
-        <nav class="menu">
-            <ul class="menu__lista mb-0">
-                <li class="menu__item">
-                    <a href="./index.html">Home</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./secciones/servicios.html">Servicios</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./secciones/nosotros.html">Nosotros</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./secciones/contacto.html">Contacto</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./secciones/ubicacion.html">Ubicación</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-dark navbar-expand-sm container-fluid">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./imagenes/gas-station-svgrepo-com.svg" alt="" class="header__logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="./index.html">Home</a>
+                        <a class="nav-link" href="./secciones/servicios.html">Servicios</a>
+                        <a class="nav-link" href="./secciones/nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+                        <a class="nav-link" href="./secciones/ubicacion.html">Ubicacion</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
 
     <main>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 100%;">
+        <div id="carouselExampleControls" class="carousel slide w-100" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./imagenes/banner.jpg" class="d-block w-100 carrusel__imagen" alt="...">
@@ -62,13 +62,13 @@
                     <img src="imagenes/banner3.jpg" class="d-block w-100 carrusel__imagen" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev carrusel__boton" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev carrusel__boton" type="button"
+                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next carrusel__boton" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
+            <button class="carousel-control-next carrusel__boton" type="button"
+                data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>

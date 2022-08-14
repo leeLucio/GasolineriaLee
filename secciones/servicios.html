@@ -7,34 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
 
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <header>
-        <a href="../index.html"><img src="../imagenes/gas-station-svgrepo-com.svg" alt="logo" class="header__logo"></a>
-
-        <nav class="menu">
-            <ul class="menu__lista">
-                <li class="menu__item">
-                    <a href="../index.html">Home</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./servicios.html">Servicios</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./ubicacion.html">Ubicación</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-dark navbar-expand-sm container-fluid">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../imagenes/gas-station-svgrepo-com.svg" alt="" class="header__logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link active" href="./servicios.html">Servicios</a>
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <a class="nav-link" href="./ubicacion.html">Ubicacion</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -47,7 +54,8 @@
                     <img src="../imagenes/gas-station-outline.svg" alt="">
                     <div class="servicios__descripcion">
                         <h2>Combustible</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, vitae? Dolorum velit eum modi mollitia magni rerum temporibus similique earum.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, vitae? Dolorum velit eum
+                            modi mollitia magni rerum temporibus similique earum.</p>
                     </div>
                     <button>Mas info</button>
                 </div>
@@ -56,7 +64,8 @@
                     <img src="../imagenes/oil.svg" alt="">
                     <div class="servicios__descripcion">
                         <h2>Lubricantes</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, repellendus aperiam! Doloribus non laborum optio cum magnam excepturi eligendi accusamus id ad.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, repellendus aperiam!
+                            Doloribus non laborum optio cum magnam excepturi eligendi accusamus id ad.</p>
                     </div>
 
                     <button>Mas info</button>
@@ -66,7 +75,8 @@
                     <img src="../imagenes/tools.svg" alt="">
                     <div class="servicios__descripcion">
                         <h2>Mantenimiento del vehículo</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis libero, natus dolorum officiis quidem vitae molestias? Iure, beatae veritatis? Optio ea vero id sit eaque?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis libero, natus dolorum
+                            officiis quidem vitae molestias? Iure, beatae veritatis? Optio ea vero id sit eaque?</p>
                     </div>
                     <button>Mas info</button>
                 </div>
@@ -75,7 +85,8 @@
                     <img src="../imagenes/twitter.svg" alt="">
                     <div class="servicios__descripcion">
                         <h2>Cafetería</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur saepe sit tempore delectus voluptatem dolorem.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur saepe sit tempore
+                            delectus voluptatem dolorem.</p>
                     </div>
                     <button>Mas info</button>
                 </div>
@@ -84,7 +95,8 @@
                     <img src="../imagenes/bed-empty.svg" alt="">
                     <div class="servicios__descripcion">
                         <h2>Hospedaje</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id a quaerat eligendi ullam voluptate itaque, rerum maiores enim.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id a quaerat eligendi ullam
+                            voluptate itaque, rerum maiores enim.</p>
                     </div>
                     <button>Mas info</button>
                 </div>
@@ -93,9 +105,9 @@
                     <img src="../imagenes/silverware-fork-knife.svg" alt="">
                     <div class="servicios__descripcion">
                         <h2>Patio de Comidas</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel earum voluptatum est autem, sunt fugit corrupti? Officiis, eligendi fugit esse ea sapiente accusantium!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel earum voluptatum est autem, sunt
+                            fugit corrupti? Officiis, eligendi fugit esse ea sapiente accusantium!</p>
                     </div>
-                    <button>Mas info</button>
                 </div>
             </div>
         </section>
@@ -111,6 +123,10 @@
             <a href="https://www.twitter.com"><img src="../imagenes/icons8-twitter.svg" alt="icono twitter"></a>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
