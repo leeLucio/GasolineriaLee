@@ -77,7 +77,7 @@ header {
 .titulo__texto{
 	width: 75%;
 	margin-inline: auto;
-	text-align: justify;
+	text-align: start;
 }
 
 /* Index */
@@ -318,11 +318,6 @@ footer {
 		width: 100%;
 	}
 
-	.ubicacion__titulo{
-		width: 90%;
-		margin-inline: auto;
-	}
-
 	.ubicacion__mapa{
 		height: 500px;
 	}
@@ -334,9 +329,32 @@ footer {
 		padding: 1.2rem;
 	}
 
+	.titulo__container{
+		text-align: start;
+	}
+	
+	.titulo__texto{
+		width: 100%;
+	}
+
+
 	/* Index */
 	.diferenciales__item {
 		gap: 0px;
+	}
+
+	/* Nosotros */
+	.nosotros{
+		width: 100%;
+	}
+
+	.nosotros .titulo__container{
+		width: 90%;
+		margin-inline: auto;
+	}
+
+	.nosotros__video{
+		width: 100%;
 	}
 
 	/* Contacto */
@@ -356,10 +374,18 @@ footer {
 		justify-content: space-around;
 	}
 
-
+	/* Ubicacion */
+	.ubicacion .titulo__container{
+		width: 90%;
+		margin-inline: auto;
+	}
 }
 
 @media screen and (max-width: 480px) {
+	.banner{
+		height: 250px;
+	}
+
 	/* Index */
 	.carrusel__imagen{
 		height: 300px;
@@ -375,10 +401,6 @@ footer {
 		width: 90%;
 		margin-inline: auto;
 
-	}
-
-	.nosotros__video {
-		width: 100%;
 	}
 
 	/* Ubicacion */
