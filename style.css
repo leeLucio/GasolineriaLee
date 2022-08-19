@@ -26,7 +26,7 @@ header {
 	width: 48px;
 }
 
-.navbar-nav{
+.navbar-nav {
 	gap: 0 1rem;
 }
 
@@ -54,40 +54,40 @@ header {
 	font-weight: 700;
 }
 
-.no-resize{
+.no-resize {
 	resize: none;
 }
 
-.mayuscula{
+.mayuscula {
 	text-transform: uppercase;
 }
 
-.banner{
+.banner {
 	width: 100%;
 	height: 350px;
 	object-fit: cover;
 	object-position: center;
 }
 
-.titulo__container{
+.titulo__container {
 	margin-bottom: 50px;
 	text-align: center;
 }
 
-.titulo__texto{
+.titulo__texto {
 	width: 75%;
 	margin-inline: auto;
 	text-align: start;
 }
 
 /* Index */
-.carrusel__imagen{
+.carrusel__imagen {
 	height: 500px;
 	object-fit: cover;
 	object-position: center;
 }
 
-.carrusel__boton{
+.carrusel__boton {
 	background-color: rgba(100, 100, 100, 40%);
 	width: 10%;
 }
@@ -116,6 +116,7 @@ header {
 
 .diferenciales__lista {
 	list-style-type: none;
+	padding: 0;
 
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -142,7 +143,7 @@ header {
 }
 
 /* Servicios */
-.servicios__container{
+.servicios__container {
 	width: 100%;
 
 	display: grid;
@@ -153,7 +154,7 @@ header {
 }
 
 
-.servicios__carta{
+.servicios__carta {
 	background-color: #fff;
 	border-radius: 15px;
 
@@ -167,11 +168,11 @@ header {
 	transition: transform 0.5s;
 }
 
-.servicios__carta:hover{
+.servicios__carta:hover {
 	transform: scale(1.1);
 }
 
-.servicios__carta img{
+.servicios__carta img {
 	width: 50%;
 	padding: 20px;
 	margin-top: 20px;
@@ -180,7 +181,7 @@ header {
 	opacity: 70%;
 }
 
-.servicios__carta__titulo{
+.servicios__carta__titulo {
 	font-size: 1.75rem;
 	font-weight: 700;
 
@@ -188,11 +189,11 @@ header {
 	text-align: center;
 }
 
-.servicios__descripcion{
+.servicios__descripcion {
 	margin: 0 20px;
 }
 
-.boton-info{
+.boton-info {
 	margin-bottom: 25px;
 	margin-top: auto;
 	padding: 20px 50px;
@@ -238,6 +239,11 @@ header {
 	margin-bottom: 20px;
 }
 
+.contacto__formulario button {
+	background-color: #232F3E;
+	border: none;
+}
+
 .contacto__informacion {
 	display: grid;
 	gap: 20px;
@@ -278,18 +284,67 @@ header {
 	height: 600px;
 }
 
-
-footer {
+footer{
 	margin-top: 50px;
 	padding: 30px;
 	background-color: #232F3E;
 	color: #FFFFFF;
 
+}
+
+.footer__info {
+	margin-top: 50px;
 	text-align: center;
+
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	gap: 30px;
+}
+
+.footer__logo img {
+	width: 100px;
 }
 
 
+.footer__contacto {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	color: gray;
+}
+
+.footer__contacto img,
+.footer__redes img {
+	height: 25px;
+	filter: invert() brightness(70%);
+}
+
+
+.footer__suscripcion input,
+.footer__suscripcion button{
+	padding: 5px;
+}
+
+.footer__redes{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.copyright{
+	background-color: #111111;
+	color: #eeeeee;
+	padding: 20px;
+
+	text-align: center;
+}
+
 @media screen and (max-width: 768px) {
+
 	.principal,
 	.diferenciales,
 	.servicios,
@@ -318,22 +373,22 @@ footer {
 		width: 100%;
 	}
 
-	.ubicacion__mapa{
+	.ubicacion__mapa {
 		height: 500px;
 	}
 }
 
 @media screen and (max-width: 600px) {
-	.navbar-nav .nav-link{
+	.navbar-nav .nav-link {
 		text-align: center;
 		padding: 1.2rem;
 	}
 
-	.titulo__container{
+	.titulo__container {
 		text-align: start;
 	}
-	
-	.titulo__texto{
+
+	.titulo__texto {
 		width: 100%;
 	}
 
@@ -344,16 +399,16 @@ footer {
 	}
 
 	/* Nosotros */
-	.nosotros{
+	.nosotros {
 		width: 100%;
 	}
 
-	.nosotros .titulo__container{
+	.nosotros .titulo__container {
 		width: 90%;
 		margin-inline: auto;
 	}
 
-	.nosotros__video{
+	.nosotros__video {
 		width: 100%;
 	}
 
@@ -375,19 +430,20 @@ footer {
 	}
 
 	/* Ubicacion */
-	.ubicacion .titulo__container{
+	.ubicacion .titulo__container {
 		width: 90%;
 		margin-inline: auto;
 	}
+
 }
 
 @media screen and (max-width: 480px) {
-	.banner{
+	.banner {
 		height: 250px;
 	}
 
 	/* Index */
-	.carrusel__imagen{
+	.carrusel__imagen {
 		height: 300px;
 	}
 
@@ -404,7 +460,11 @@ footer {
 	}
 
 	/* Ubicacion */
-	.ubicacion__mapa{
+	.ubicacion__mapa {
 		height: 400px;
+	}
+
+	.footer__info{
+		margin-top: 10px;
 	}
 }
