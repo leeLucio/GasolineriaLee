@@ -313,8 +313,16 @@ footer{
 	flex-direction: column;
 	gap: 20px;
 
+	text-align: start;
 	color: gray;
 }
+
+.footer__contacto__item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
 
 .footer__contacto img,
 .footer__redes img {
