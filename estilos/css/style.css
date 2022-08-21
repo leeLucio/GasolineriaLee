@@ -100,6 +100,17 @@
   border-radius: 30px;
 }
 
+.nosotros__descripcion {
+  line-height: 1.5rem;
+  margin-bottom: 50px;
+}
+.nosotros__video {
+  width: 80%;
+  height: 500px;
+  display: block;
+  margin: auto;
+}
+
 /* Contacto */
 .contacto {
   display: grid;
