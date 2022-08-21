@@ -1,0 +1,62 @@
+.carrusel {
+	&__imagen {
+		height: 500px;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	&__boton {
+		background-color: rgba(100, 100, 100, 40%);
+		width: 10%;
+	}
+}
+
+.principal,
+.horarios {
+	text-align: center;
+}
+
+
+.principal__descripcion {
+	font-size: 1.1rem;
+	word-spacing: 0.5rem;
+	line-height: 1.5rem;
+}
+
+.diferenciales {
+	margin-top: 100px;
+
+	&__titulo {
+		font-size: 2rem;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	&__lista {
+		list-style-type: none;
+		padding: 0;
+
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 50px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+		text-align: center;
+
+		opacity: 80%;
+
+		img {
+			width: 80%;
+		}
+
+		p {
+			font-size: 1.2rem;
+			font-weight: bold;
+		}
+	}
+}

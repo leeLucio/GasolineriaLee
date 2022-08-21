@@ -1,0 +1,13 @@
+.nosotros {
+	&__descripcion {
+		line-height: 1.5rem;
+		margin-bottom: 50px;
+	}
+
+	&__video {
+		width: 80%;
+		height: 500px;
+		display: block;
+		margin: auto;
+	}
+}

@@ -1,0 +1,14 @@
+.horarios {
+	&__tabla {
+		margin: 0 auto;
+		border-collapse: separate;
+		border-spacing: 30px 3px;
+	}
+}
+
+.ubicacion {
+	&__mapa {
+		width: 100%;
+		height: 600px;
+	}
+}

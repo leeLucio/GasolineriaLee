@@ -1,87 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: #f7f7f7;
-  font-family: "Roboto", sans-serif;
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: -webkit-min-content auto -webkit-min-content;
-  grid-template-rows: min-content auto min-content;
-}
-
-header {
-  background-color: #232F3E;
-  padding: 20px;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header__logo {
-  width: 48px;
-}
-
-.navbar-nav {
-  gap: 0 1rem;
-}
-
-.principal,
-.diferenciales,
-.servicios,
-.nosotros,
-.contacto,
-.ubicacion,
-.horarios,
-.dedicacion {
-  max-width: 1200px;
-  width: 85%;
-  margin: 30px auto;
-}
-
-.principal__titulo,
-.nosotros__titulo,
-.contacto__titulo,
-.ubicacion__titulo,
-.servicios__titulo {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-
-.no-resize {
-  resize: none;
-}
-
-.mayuscula {
-  text-transform: uppercase;
-}
-
-.banner {
-  width: 100%;
-  height: 350px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-
-.titulo__container {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.titulo__texto {
-  width: 75%;
-  margin-inline: auto;
-  text-align: start;
-}
-
-/* Index */
 .carrusel__imagen {
   height: 500px;
   -o-object-fit: cover;
@@ -184,18 +100,6 @@ header__logo {
   border-radius: 30px;
 }
 
-/* Nosotros */
-.nosotros__descripcion {
-  line-height: 1.5rem;
-  margin-bottom: 50px;
-}
-.nosotros__video {
-  width: 80%;
-  height: 500px;
-  display: block;
-  margin: auto;
-}
-
 /* Contacto */
 .contacto {
   display: grid;
@@ -237,12 +141,10 @@ header__logo {
 .contacto__redes img {
   height: 25px;
 }
-
-.titulo__container {
+.contacto .titulo__container {
   grid-column: 1/-1;
 }
 
-/* Ubicacion */
 .horarios__tabla {
   margin: 0 auto;
   border-collapse: separate;
@@ -279,7 +181,7 @@ footer {
   text-align: start;
   color: gray;
 }
-.footer__contacto_item {
+.footer__contacto__item {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -308,6 +210,90 @@ footer {
   color: #eeeeee;
   padding: 20px;
   text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: -webkit-min-content auto -webkit-min-content;
+  grid-template-rows: min-content auto min-content;
+}
+
+header {
+  background-color: #232F3E;
+  padding: 20px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 48px;
+}
+
+.navbar-nav {
+  gap: 0 1rem;
+}
+
+.principal,
+.diferenciales,
+.servicios,
+.nosotros,
+.contacto,
+.ubicacion,
+.horarios,
+.dedicacion {
+  max-width: 1200px;
+  width: 85%;
+  margin: 30px auto;
+}
+
+.principal__titulo,
+.nosotros__titulo,
+.contacto__titulo,
+.ubicacion__titulo,
+.servicios__titulo {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.no-resize {
+  resize: none;
+}
+
+.mayuscula {
+  text-transform: uppercase;
+}
+
+.banner {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.titulo__container {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.titulo__texto {
+  width: 75%;
+  margin-inline: auto;
+  text-align: start;
 }
 
 @media screen and (max-width: 768px) {
@@ -357,12 +343,12 @@ footer {
   .nosotros {
     width: 100%;
   }
+  .nosotros__video {
+    width: 100%;
+  }
   .nosotros .titulo__container {
     width: 90%;
     margin-inline: auto;
-  }
-  .nosotros__video {
-    width: 100%;
   }
   /* Contacto */
   .contacto {

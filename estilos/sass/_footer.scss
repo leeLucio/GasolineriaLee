@@ -1,0 +1,73 @@
+footer {
+	margin-top: 50px;
+	padding: 30px;
+	background-color: #232F3E;
+	color: #FFFFFF;
+
+}
+
+.footer {
+	&__info {
+		margin-top: 50px;
+		text-align: center;
+
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		gap: 30px;
+	}
+
+	&__logo {
+		img {
+			width: 100px;
+		}
+	}
+
+	&__contacto {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		text-align: start;
+		color: gray;
+
+		&__item {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		img {
+			height: 25px;
+			filter: invert(1) brightness(70%);
+		}
+	}
+
+	&__redes {
+		margin-top: 50px;
+		display: flex;
+		justify-content: center;
+		gap: 30px;
+
+		img {
+			height: 25px;
+			filter: invert(1) brightness(70%);
+		}
+	}
+
+	&__suscripcion {
+		input,
+		button {
+			padding: 5px;
+		}
+	}
+}
+
+.copyright {
+	background-color: #111111;
+	color: #eeeeee;
+	padding: 20px;
+
+	text-align: center;
+}

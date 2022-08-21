@@ -1,0 +1,54 @@
+/* Contacto */
+.contacto {
+	display: grid;
+	grid-template-rows: min-content auto auto;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	align-items: center;
+
+	&__formulario {
+		grid-row: 2/4;
+
+		* {
+			margin-bottom: 20px;
+		}
+
+		button {
+			background-color: #232F3E;
+			border: none;
+		}
+	}
+
+	&__informacion {
+		display: grid;
+		gap: 20px;
+
+		align-self: end;
+
+		&__item {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		img {
+			height: 25px;
+		}
+	}
+
+	&__redes {
+		align-self: start;
+
+		width: 50%;
+		display: flex;
+		justify-content: space-evenly;
+
+		img {
+			height: 25px;
+		}
+	}
+	
+	.titulo__container {
+		grid-column: 1/-1;
+	}
+}
