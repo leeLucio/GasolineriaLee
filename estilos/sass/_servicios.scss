@@ -1,4 +1,3 @@
-/* Servicios */
 .servicios {
 	&__container {
 		width: 100%;
@@ -28,8 +27,7 @@
 		img {
 			width: 50%;
 			padding: 20px;
-			margin-top: 20px;
-			margin-bottom: 10px;
+			@include margen-top-bottom(20px, 10px);
 
 			opacity: 70%;
 		}
@@ -49,13 +47,6 @@
 }
 
 .boton-info {
-	margin-bottom: 25px;
-	margin-top: auto;
-	padding: 20px 50px;
-
-	background-color: #232F3E;
-	color: white;
-
-	border: none;
+	@extend .boton;	
 	border-radius: 30px;
 }

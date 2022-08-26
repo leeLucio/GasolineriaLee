@@ -45,10 +45,10 @@ footer {
 	}
 
 	&__redes {
-		margin-top: 50px;
-		display: flex;
-		justify-content: center;
+		@include flex-row-center;
 		gap: 30px;
+
+		margin-top: 50px;
 
 		img {
 			height: 25px;

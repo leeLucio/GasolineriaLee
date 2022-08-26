@@ -1,4 +1,6 @@
 @import "variables";
+@import "mixins";
+@import "boton";
 
 @import "index";
 @import "servicios";
@@ -16,7 +18,7 @@
 body {
 	background-color: $backgroundClaro;
 	font-family: 'Roboto', sans-serif;
-
+	
 	min-height: 100vh;
 	display: grid;
 	grid-template-rows: min-content auto min-content;
@@ -26,10 +28,6 @@ header {
 	background-color: $colorPrimario;
 	padding: 20px;
 	height: min-content;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .header__logo {
@@ -49,15 +47,14 @@ header {
 .horarios,
 .dedicacion {
 	max-width: 1200px;
-	width: 85%;
-	margin: 30px auto;
+	@include ancho-margen(85%, 30px auto)
 }
 
 .principal__titulo,
+.servicios__titulo,
 .nosotros__titulo,
 .contacto__titulo,
-.ubicacion__titulo,
-.servicios__titulo {
+.ubicacion__titulo{
 	font-size: 2.5rem;
 	margin-bottom: 30px;
 	font-weight: 700;
@@ -155,8 +152,7 @@ header {
 		}
 
 		.titulo__container {
-			width: 90%;
-			margin-inline: auto;
+			@include ancho-margenInline(90%, auto);
 		}
 	}
 
@@ -172,7 +168,6 @@ header {
 		&__redes {
 			width: 100%;
 			justify-self: stretch;
-
 			justify-content: space-around;
 		}
 	}
@@ -180,8 +175,7 @@ header {
 	/* Ubicacion */
 	.ubicacion {
 		.titulo__container {
-			width: 90%;
-			margin-inline: auto;
+			@include ancho-margenInline(90%, auto);
 		}
 	}
 
@@ -204,8 +198,7 @@ header {
 
 	.nosotros__titulo,
 	.nosotros__descripcion {
-		width: 90%;
-		margin-inline: auto;
+		@include ancho-margenInline(90%, auto);
 	}
 
 	/* Ubicacion */

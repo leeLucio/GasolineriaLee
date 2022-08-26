@@ -5,9 +5,8 @@
 	}
 
 	&__video {
-		width: 80%;
+		@include ancho-margen(80%, auto);
 		height: 500px;
 		display: block;
-		margin: auto;
 	}
 }

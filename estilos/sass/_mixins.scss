@@ -1,0 +1,20 @@
+@mixin ancho-margen($ancho, $margin){
+	width: $ancho;
+	margin: $margin;
+}
+
+@mixin ancho-margenInline($ancho, $margenInline) {
+	width: $ancho;
+	margin-inline: $margenInline;
+}
+
+@mixin flex-row-center{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+@mixin margen-top-bottom($top, $bottom){
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
