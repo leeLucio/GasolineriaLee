@@ -24,9 +24,8 @@
 }
 
 .diferenciales {
-	margin-top: 100px;
 	max-width: 1200px;
-	margin-inline: auto;
+	@include ancho-margen(85%, 100px auto 0);
 
 	&__titulo {
 		font-size: 2rem;
@@ -68,14 +67,19 @@
 .recomendaciones{
 	margin-top: 100px;
 	text-align: center;
-	max-width: 1200px;
-	margin-inline: auto;
+	padding-top: 50px;
+	padding-bottom: 30px;
+
+	background-color: white;
 
 	&__titulo{
 		font-size: 1.5rem;
 		text-transform: uppercase;
 		font-weight: bold;
 		margin-bottom: 20px;
+		
+		max-width: 90%;
+		margin: auto;
 	}
 
 	&__imagenes{
