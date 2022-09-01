@@ -18,3 +18,8 @@
 	margin-top: $top;
 	margin-bottom: $bottom;
 }
+
+@mixin animacion($animacion, $duracion){
+	animation: $animacion;
+	animation-duration: $duracion;
+}

@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "boton";
+@import "animaciones";
 
 @import "index";
 @import "servicios";
@@ -78,6 +79,8 @@ header {
 .titulo__container {
 	margin-bottom: 50px;
 	text-align: center;
+
+	@include animacion(animacion1, 1s);
 }
 
 .titulo__texto {

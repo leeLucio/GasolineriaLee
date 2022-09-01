@@ -6,6 +6,8 @@
 	align-items: center;
 
 	&__formulario {
+		@include animacion(izq-a-der, 1s);
+
 		grid-row: 2/4;
 
 		> * {
@@ -19,6 +21,7 @@
 	}
 
 	&__informacion {
+		@include animacion(der-a-izq, 1s);
 		display: grid;
 		gap: 20px;
 
@@ -36,6 +39,7 @@
 	}
 
 	&__redes {
+		@include animacion(der-a-izq, 1s);
 		align-self: start;
 
 		width: 50%;

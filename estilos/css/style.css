@@ -7,6 +7,67 @@
   border: none;
 }
 
+@-webkit-keyframes animacion1 {
+  from {
+    opacity: 0%;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+
+@keyframes animacion1 {
+  from {
+    opacity: 0%;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes izq-a-der {
+  from {
+    opacity: 0%;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+@keyframes izq-a-der {
+  from {
+    opacity: 0%;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes der-a-izq {
+  from {
+    opacity: 0%;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+@keyframes der-a-izq {
+  from {
+    opacity: 0%;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
 .carrusel__imagen {
   height: 500px;
   -o-object-fit: cover;
@@ -19,9 +80,12 @@
   width: 10%;
 }
 
-.principal,
-.horarios {
+.principal {
   text-align: center;
+  -webkit-animation: animacion1;
+          animation: animacion1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .principal__descripcion {
@@ -65,11 +129,15 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-  grid-auto-rows: 500px;
+  grid-auto-rows: minmax(500px, auto);
   gap: 50px;
   justify-content: center;
 }
 .servicios__carta {
+  -webkit-animation: animacion1;
+          animation: animacion1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   background-color: #fff;
   border-radius: 15px;
   display: flex;
@@ -111,6 +179,17 @@
   margin: auto;
   height: 500px;
   display: block;
+  -webkit-animation: animacion1;
+          animation: animacion1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.dedicacion {
+  -webkit-animation: animacion1;
+          animation: animacion1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .contacto {
@@ -122,6 +201,10 @@
   align-items: center;
 }
 .contacto__formulario {
+  -webkit-animation: izq-a-der;
+          animation: izq-a-der;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   grid-row: 2/4;
 }
 .contacto__formulario > * {
@@ -131,6 +214,10 @@
   border-radius: 20px;
 }
 .contacto__informacion {
+  -webkit-animation: der-a-izq;
+          animation: der-a-izq;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   display: grid;
   gap: 20px;
   align-self: end;
@@ -144,6 +231,10 @@
   height: 25px;
 }
 .contacto__redes {
+  -webkit-animation: der-a-izq;
+          animation: der-a-izq;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   align-self: start;
   width: 50%;
   display: flex;
@@ -156,6 +247,13 @@
   grid-column: 1/-1;
 }
 
+.horarios {
+  text-align: center;
+  -webkit-animation: animacion1;
+          animation: animacion1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
 .horarios__tabla {
   margin: 0 auto;
   border-collapse: separate;
@@ -165,6 +263,10 @@
 .ubicacion__mapa {
   width: 100%;
   height: 600px;
+  -webkit-animation: animacion1;
+          animation: animacion1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 footer {
@@ -297,6 +399,10 @@ header {
 .titulo__container {
   margin-bottom: 50px;
   text-align: center;
+  -webkit-animation: animacion1;
+          animation: animacion1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .titulo__texto {

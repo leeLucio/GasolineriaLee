@@ -1,8 +1,12 @@
 .horarios {
+	text-align: center;
+	@include animacion(animacion1, 1s);
+	
 	&__tabla {
 		margin: 0 auto;
 		border-collapse: separate;
 		border-spacing: 30px 3px;
+
 	}
 }
 
@@ -10,5 +14,7 @@
 	&__mapa {
 		width: 100%;
 		height: 600px;
+
+		@include animacion(animacion1, 1s);
 	}
 }

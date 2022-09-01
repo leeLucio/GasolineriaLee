@@ -1,0 +1,35 @@
+@keyframes animacion1 {
+	from {
+		opacity: 0%;
+		transform: scale(0.5);
+	}
+
+	to{
+		opacity: 100%;
+		transform: scale(1);
+	}
+}
+
+@keyframes izq-a-der{
+	from{
+		opacity: 0%;
+		transform: translateX(-100px);
+	}
+
+	to{
+		opacity: 100%;
+		transform: translateX(0px);
+	}
+}
+
+@keyframes der-a-izq{
+	from{
+		opacity: 0%;
+		transform: translateX(100px);
+	}
+
+	to{
+		opacity: 100%;
+		transform: translateX(0px);
+	}
+}

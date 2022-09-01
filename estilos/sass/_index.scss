@@ -11,9 +11,9 @@
 	}
 }
 
-.principal,
-.horarios {
+.principal {
 	text-align: center;
+	@include animacion(animacion1, 1s);
 }
 
 

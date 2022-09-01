@@ -8,5 +8,11 @@
 		@include ancho-margen(80%, auto);
 		height: 500px;
 		display: block;
+
+		@include animacion(animacion1, 1s);
 	}
+}
+
+.dedicacion{
+	@include animacion(animacion1, 1s);
 }
