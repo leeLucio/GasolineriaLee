@@ -401,8 +401,8 @@ header {
   text-align: center;
   -webkit-animation: animacion1;
           animation: animacion1;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 
 .titulo__texto {

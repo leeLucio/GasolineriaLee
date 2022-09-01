@@ -80,7 +80,7 @@ header {
 	margin-bottom: 50px;
 	text-align: center;
 
-	@include animacion(animacion1, 1s);
+	@include animacion(animacion1, 0.7s);
 }
 
 .titulo__texto {
