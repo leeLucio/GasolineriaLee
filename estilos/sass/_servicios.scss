@@ -51,4 +51,12 @@
 .boton-info {
 	@extend .boton;	
 	border-radius: 30px;
+
+	&:hover{
+		background-color: $colorPrimario;
+	}
+
+	&:focus{
+		background-color: $colorPrimario;
+	}
 }

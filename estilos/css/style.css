@@ -204,6 +204,12 @@
 .boton-info {
   border-radius: 30px;
 }
+.boton-info:hover {
+  background-color: #232F3E;
+}
+.boton-info:focus {
+  background-color: #232F3E;
+}
 
 .nosotros__descripcion {
   line-height: 1.5rem;
